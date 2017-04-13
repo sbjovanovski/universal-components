@@ -1,0 +1,59 @@
+.collapsible-base {
+  background: white;
+  width: 100%;
+  box-shadow: 0 3px 10px -1px #dadada;
+  flex-direction: column;
+  > .headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    border-bottom: 0.5px solid #EEEEEE;
+    cursor: pointer;
+    width: auto;
+    font-size: 18px;
+    transition: 0.2s;
+    background: white;
+    color: grey;
+    position: relative;
+    &:hover {
+      transition: 0.2s;
+      background: #eeeeee;
+    }
+    > .title {
+      > .optional-title {
+        margin-left: 12px;
+        border: 1px solid #dadada;
+        border-radius: 33px;
+        color: #dadada;
+        font-size: 14px;
+        padding: 5px 10px;
+        height: 33px;
+      }
+    }
+    > .icons {
+      > label {
+        cursor: pointer;
+        font-size: 14px;
+        color: #0071BC;
+      }
+      > i {
+        margin: 0 5px;
+      }
+    }
+    &.collapsed {
+      background: #eeeeee;
+    }
+  }
+  > .content {
+    padding: 10px;
+    display: none;
+    width: auto;
+    > p {
+      color: grey;
+    }
+    &.collapsed {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

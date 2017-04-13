@@ -1,0 +1,14 @@
+.FlexRow {
+  width: 100%;
+  display: flex;
+  height: auto;
+  margin-bottom: 17px;
+}
+
+@media screen and (max-width: 992px) {
+  .FlexRow {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}

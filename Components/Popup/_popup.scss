@@ -1,0 +1,25 @@
+.popup-menu {
+  height: inherit;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-weight: 300;
+  > .popup-title {
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: solid 1px #f2f2f2;
+    padding-bottom: 18px;
+  }
+  > .popup-description {
+    font-weight: 300;
+    margin: 7px 0;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 23px;
+  }
+}

@@ -1,0 +1,28 @@
+.tooltip-label {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .tooltip {
+    position: absolute;
+    max-width: 350px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    z-index: 999;
+    transform: translate(0, -50px);
+    &.hide {
+      transition: all 0.2s ease-out;
+      visibility: hidden;
+    }
+    &.show {
+      visibility: visible;
+      transition: all 0.2s ease-out;
+      transform: translate(0, 0);
+    }
+  }
+  .label {
+    padding: 5px 0;
+    font-weight: 400;
+  }
+}

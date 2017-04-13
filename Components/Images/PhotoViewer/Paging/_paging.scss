@@ -1,0 +1,85 @@
+.paging {
+  display: flex;
+  width: 100%;
+  position: relative;
+  .paging-numbers {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .page-num {
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #f2f2f2;
+      width: 15px;
+      height: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 6px;
+      font-weight: 600;
+      color: #29aae2;
+      cursor: pointer;
+      transition: 0.2s;
+      &:hover {
+        box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, 0.1);
+        transition: 0.2s;
+      }
+    }
+    .active {
+      font-weight: 600;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #f2f2f2;
+      width: 15px;
+      background: #29aae2;
+      color: white;
+      height: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 6px;
+    }
+  }
+  .paging-arrows {
+    width: 100%;
+    .arrow-left {
+      position: absolute;
+      top: 50%;
+      cursor: pointer;
+      left: -10px;
+      transform: translate(0, -50%);
+      background: white;
+      color: grey;
+      padding: 10px;
+      border-radius: 50%;
+      transition: 0.2s;
+      box-shadow: 0 0 7px 1px grey;
+      &:hover {
+        transition: 0.2s;
+        background: #f2f2f2;
+      }
+    }
+    .arrow-right {
+      position: absolute;
+      top: 50%;
+      cursor: pointer;
+      right: -10px;
+      transform: translate(0, -50%);
+      background: white;
+      color: grey;
+      padding: 10px;
+      border-radius: 50%;
+      transition: 0.2s;
+      box-shadow: 0 0 7px 1px grey;
+      &:hover {
+        transition: 0.2s;
+        background: #f2f2f2;
+      }
+    }
+  }
+  > span {
+    width: 100%;
+    display: flex;
+  }
+}

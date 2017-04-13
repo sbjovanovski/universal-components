@@ -1,0 +1,11 @@
+{
+  "name": "universal-components",
+  "version": "1.0.0",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "lodash": "^4.17.4",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "request-frame": "^1.5.3"
+  }
+}
