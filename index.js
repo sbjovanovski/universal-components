@@ -1,25 +1,34 @@
-import Popup from './Components/Popup/popup';
-import FlexRow from './Components/FlexRow/FlexRow';
-import Images from './Components/Images/images';
-import Spinner from './Components/LoadingSpinner/Spinner';
-import Paging from './Components/Paging/paging';
-import SelectableBoxes from './Components/SelectableBoxes/SelectableBoxes';
-import Tabs from './Components/Tabs/Tabs';
-import Tolltip from './Components/Tooltip/tooltipLabel';
-import Collapsible from './Components/Collapsibe/Collapsible';
-import Notification from './Components/Notification/notification';
-
 const components = {
-    FlexRow: FlexRow,
-    Images: Images,
-    Spinner: Spinner,
-    Paging: Paging,
-    Popup: Popup,
-    SelectableBoxes: SelectableBoxes,
-    Tabs: Tabs,
-    Tooltip: Tolltip,
-    Collapsible: Collapsible,
-    Notification: Notification
+    get FlexRow() {
+        return require('./Components/FlexRow/FlexRow')
+    },
+    get Collapsible() {
+        return require('./Components/Collapsibe/Collapsible');
+    },
+    get Images() {
+        return require('./Components/Images/images');
+    },
+    get Spinner() {
+        return require('./Components/LoadingSpinner/Spinner');
+    },
+    get Paging() {
+        return require('./Components/Paging/paging');
+    },
+    get Popup() {
+        return require('./Components/Popup/popup');
+    },
+    get SelectableBoxes() {
+        return require('./Components/SelectableBoxes/SelectableBoxes');
+    },
+    get Tabs() {
+        return require('./Components/Tabs/Tabs');
+    },
+    get Tooltip() {
+        return require('./Components/Tooltip/tooltipLabel');
+    },
+    get Notification() {
+        return require('./Components/Notification/notification');
+    }
 };
 
 module.exports = components;
